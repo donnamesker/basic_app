@@ -1,0 +1,12 @@
+<h1>Posts</h1>
+    <% @userposts.each do |userpost| %>
+        <div>
+            <b>user id: </b><%=userpost.user_id %>
+        </div>
+        <div>
+            Post id: <%=userpost.id %>
+        </div>
+        <div>
+            <%= userpost.content %><br /><br />
+        </div>
+    <% end %>
